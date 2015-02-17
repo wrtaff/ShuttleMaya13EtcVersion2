@@ -1,0 +1,10 @@
+RELEASE=13
+CODENAME=maya
+EDITION="Cinnamon 32-bit"
+DESCRIPTION="Linux Mint 13 Maya"
+DESKTOP=Gnome
+TOOLKIT=GTK
+NEW_FEATURES_URL=http://www.linuxmint.com/rel_maya_whatsnew.php
+RELEASE_NOTES_URL=http://www.linuxmint.com/rel_maya.php
+USER_GUIDE_URL=http://www.linuxmint.com/documentation.php
+GRUB_TITLE=Linux Mint 13 Cinnamon 32-bit

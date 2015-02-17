@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<mateconf>
+	<dir name="schemas">
+		<dir name="apps">
+			<dir name="mateconf-editor">
+				<entry name="bookmarks" mtime="1367599085" type="schema" stype="list" owner="mateconf-editor" gettext_domain="mate-conf-editor" list_type="string">
+					<local_schema locale="C" short_desc="Bookmarks">
+						<default type="list" ltype="string">
+						</default>
+						<longdesc>mateconf-editor folder bookmarks</longdesc>
+					</local_schema>
+				</entry>
+			</dir>
+		</dir>
+	</dir>
+	<dir name="apps">
+		<dir name="mateconf-editor">
+			<entry name="bookmarks" mtime="1367599085" schema="/schemas/apps/mateconf-editor/bookmarks"/>
+		</dir>
+	</dir>
+</mateconf>

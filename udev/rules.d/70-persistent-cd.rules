@@ -1,0 +1,25 @@
+# This file maintains persistent names for CD/DVD reader and writer devices.
+# See udev(7) for syntax.
+#
+# Entries are automatically added by the 75-cd-aliases-generator.rules
+# file; however you are also free to add your own entries provided you
+# add the ENV{GENERATED}=1 flag to your own rules as well.
+# Optiarc_DVD_RW_AD-7240S (pci-0000:00:1f.2-scsi-1:0:0:0)
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-1:0:0:0", SYMLINK+="cdrom", ENV{GENERATED}="1"
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-1:0:0:0", SYMLINK+="cdrw", ENV{GENERATED}="1"
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-1:0:0:0", SYMLINK+="dvd", ENV{GENERATED}="1"
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-1:0:0:0", SYMLINK+="dvdrw", ENV{GENERATED}="1"
+
+# U3_Cruzer_Micro (pci-0000:00:1d.7-usb-0:4:1.0-scsi-0:0:0:1)
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_SERIAL}=="SanDisk_U3_Cruzer_Micro_0000151C476089B0-0:1", SYMLINK+="cdrom1", ENV{GENERATED}="1"
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_SERIAL}=="SanDisk_U3_Cruzer_Micro_0000151C476089B0-0:1", SYMLINK+="cdrw1", ENV{GENERATED}="1"
+
+# UMS_CD-ROM (pci-0000:00:1a.1-usb-0:2.1:1.0-scsi-0:0:0:0)
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_SERIAL}=="SAMSUNG_UMS_CD-ROM_34330B354AC800EC-0:0", SYMLINK+="cdrom2", ENV{GENERATED}="1"
+
+# SONY_DVD+_-RW_AW-Q160S (pci-0000:00:1f.2-scsi-2:0:0:0)
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-2:0:0:0", SYMLINK+="cdrom3", ENV{GENERATED}="1"
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-2:0:0:0", SYMLINK+="cdrw3", ENV{GENERATED}="1"
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-2:0:0:0", SYMLINK+="dvd3", ENV{GENERATED}="1"
+SUBSYSTEM=="block", ENV{ID_CDROM}=="?*", ENV{ID_PATH}=="pci-0000:00:1f.2-scsi-2:0:0:0", SYMLINK+="dvdrw3", ENV{GENERATED}="1"
+

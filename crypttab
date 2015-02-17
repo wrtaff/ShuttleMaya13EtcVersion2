@@ -1,0 +1,1 @@
+cryptswap1 /dev/sda6 /dev/urandom swap,cipher=aes-cbc-essiv:sha256

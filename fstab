@@ -1,0 +1,34 @@
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+proc            /proc           proc    nodev,noexec,nosuid 0       0
+# / was on /dev/sda3 during installation
+UUID=0edbb708-ef35-4b9a-9783-5038d1e6d393 /               ext4    errors=remount-ro 0       1
+# /home was on /dev/sda5 during installation
+UUID=59cb358b-fe8b-499d-8022-220280228e1e /home           ext4    defaults        0       2
+# swap was on /dev/sda6 during installation
+#UUID=3da80dbe-b5ca-49ef-ad67-3d9e916ac256 none            swap    sw              0       0
+/dev/mapper/cryptswap1 none swap sw 0 0
+#
+#
+
+#NFS MOUNT ADDED BY WILL
+192.168.0.183:/Family /mnt/family_NFS nfs rsize=8192,wsize=8192,timeo=14,intr
+
+
+#NFS MOUNT ADDED BY WILL END OF MAY13
+192.168.0.183:/Jen /home/jen/Documents nfs rsize=8192,wsize=8192,timeo=14,intr
+
+
+#NFS MOUNT ADDED BY WRT 2013-07-03 11:41:40 
+192.168.0.183:/backup/will /mnt/willBAK_NFS nfs rsize=8192,wsize=8192,timeo=14,intr
+
+#NFS MOUNT ADDED BY WRT 2014-05-23 (for backing up piwigo)
+192.168.0.183:/backup/piwigo_BAK /mnt/piwigo_BAK_NFS nfs rsize=8192,wsize=8192,timeo=14,intr
+
+#NFS MOUNT ADDED BY WRT 2015-02-04 (for accessing media files on ReadyNAS)
+192.168.0.183:/media /mnt/media_NFS nfs rsize=8192,wsize=8192,timeo=14,intr
